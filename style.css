@@ -1,3 +1,11 @@
+/* Etiquetas */
+
+body {
+    background-color: #122536;
+}
+
+
+
 /* Clases */
 
 .navbar {
@@ -35,6 +43,37 @@
     right: 0;
     z-index: 1;
 }
+/*--- Pointing arrow ---*/
+.dropdown-toggle {
+    position: relative;
+    padding-right: 25px;
+}
+
+.dropdown-toggle::after { 
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -2.5px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+  
+  .logo {
+    width: 30%; /* adjust to the size of your logo */
+    height: 30%; /* adjust to the size of your logo */
+  }
 
 /* Large screens */
 @media (min-width: 1200px) {
@@ -49,6 +88,7 @@
     }
   }
   
+
   /* Small screens */
   @media (max-width: 1199px) {
     #profile-pic {
