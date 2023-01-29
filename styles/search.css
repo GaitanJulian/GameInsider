@@ -1,3 +1,4 @@
+/* ------------ AJUSTES DE LA NAVBAR PARA INTEGRAR LA BUSQUEDA DENTRO ------------------*/
 .search-container-nav {
     display: flex;
     align-items: center;
@@ -55,6 +56,58 @@
     position: relative; /* Add this */
 }
 
+/* --------------------------- PUBLICACIONES RELACIONADAS ---------------------------------*/
+
+
+.publication {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #E5E5E5;
+  height: 8%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.text {
+  font-size: 14px;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  }
+
+.thumbs-up {
+  margin-right: 5px;
+  color: #3a3538;
+}
+
+.comments {
+  margin-left: 2px;
+  margin-right: 5px;
+  color: #3a3538;
+}
+
+.img-fluid {
+  max-width: 10%;
+  height: auto;
+  margin: 0 2px;
+}
+
+/* Ajustes responsive */
 
 @media (max-width: 990px){
       .search-container-nav {
