@@ -5,11 +5,10 @@ body {
 }
 
 form {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
   
   input[type="text"] {
     width: 100%;
@@ -107,52 +106,69 @@ form {
 
   .search-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
+    margin-top: 3%;
   }
-  
+
+  .search-container input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .search-container button {
+    width: auto;
+    padding: 10px 18px;
+    color: rgb(9, 8, 8);
+    background-color: transparent;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
   .search-container form {
     display: flex;
     align-items: center;
   }
   
   .search-container input[type="text"] {
-    width: 85%;
+    width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    flex:1;
   }
-  
-  .search-container a {
-    width: 15%;
-    padding: 12px 20px;
-    margin: 8px 0;
+   
+.search-container i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+  .search-container form {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: background-color .3s;
-  }
-  
-  .search-container a:hover {
-    background-color: #ddd;
-  }
-  
-  .search-container i {
-    font-size: 24px;
+    position: relative; /* Add this */
+}
+
+ .fa {
+    font-size: 1.5em;
   }
 
-  .fa-search {
-    color: #fff; /* Change the color of the icon */
-    font-size: 20px; /* Change the size of the icon */
- }
-
- 
 /*--------- Identificadores de ID ----------*/
-
+#search-icon {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* Large screens */
 @media (min-width: 1200px) {
     #profile-pic {
