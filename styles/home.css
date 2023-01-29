@@ -1,7 +1,7 @@
 /* Etiquetas */
 
 body {
-    background-color: #122536;
+    background-color: #E9EBEE;
 }
 
 form {
@@ -43,6 +43,10 @@ form {
 
 .navbar-bar {
     color:  #384447ff;
+}
+
+.custom-nav-bg{
+  background-color: #001F3F;
 }
 
 .profile-pic{
