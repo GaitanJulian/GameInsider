@@ -4,6 +4,36 @@ body {
     background-color: #122536;
 }
 
+form {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  button[type="submit"] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
 
 
 /* Clases */
@@ -70,10 +100,58 @@ body {
     margin-top: 2%;
   }
   
-  .logo {
+.logo {
     width: 30%; /* adjust to the size of your logo */
     height: 30%; /* adjust to the size of your logo */
   }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-container a {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .search-container a:hover {
+    background-color: #ddd;
+  }
+  
+  .search-container i {
+    font-size: 24px;
+  }
+
+  .fa-search {
+    color: #fff; /* Change the color of the icon */
+    font-size: 20px; /* Change the size of the icon */
+ }
+
+ 
+/*--------- Identificadores de ID ----------*/
 
 /* Large screens */
 @media (min-width: 1200px) {
